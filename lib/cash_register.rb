@@ -18,11 +18,13 @@ class CashRegister
  end
  
   def apply_discount
-    binding.pry
+   
     if @discount > 0
+       
+       binding pry
        total
-       #difference = price * (@discount/100)
-       #total = self.total - difference
+       #difference = @price * (@discount/100)
+       #total = total - difference
         
        "After the discount, the total comes to $#{total}."
      else
