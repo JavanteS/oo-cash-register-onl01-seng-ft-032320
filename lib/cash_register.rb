@@ -21,7 +21,7 @@ class CashRegister
    
     if @discount > 0
        
-       binding pry
+       
        total
        #difference = @price * (@discount/100)
        #total = total - difference
