@@ -14,6 +14,8 @@ class CashRegister
     self.total += price * optional
     optional.times do 
     @items << title
+  end
+  
  end
  
   def apply_discount
