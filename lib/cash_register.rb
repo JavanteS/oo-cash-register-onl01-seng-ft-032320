@@ -22,7 +22,7 @@ class CashRegister
        
        binding.pry
        
-       difference = @total * (@discount/100)
+       difference = @total * (@discount/100.0)
        @total = @total - difference
         
        "After the discount, the total comes to $#{total}."
