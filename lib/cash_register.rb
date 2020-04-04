@@ -23,8 +23,8 @@ class CashRegister
        
        
        total
-       #difference = @price * (@discount/100)
-       #total = total - difference
+       difference = @price * (@discount/100)
+       total = total - difference
         
        "After the discount, the total comes to $#{total}."
      else
