@@ -12,7 +12,7 @@ class CashRegister
   def add_item(title, price, optional=1)
     
     self.total += price * optional
-
+    optional.times do 
     @items << title
  end
  
