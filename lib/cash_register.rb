@@ -25,7 +25,7 @@ class CashRegister
        difference = @total * (@discount/100.0)
        @total = @total - difference
         
-       "After the discount, the total comes to $#{total}."
+       "After the discount, the total comes to $#{total.to_i}."
      else
        "No discount to apply"
      end
