@@ -15,7 +15,7 @@ class CashRegister
     optional.times do 
     @items << title
   end
-  
+  self.last_transaction = price * optional
  end
  
   def apply_discount
