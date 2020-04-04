@@ -7,7 +7,6 @@ class CashRegister
     @items=[]
     @total = 0
     @discount = discount
-    @price = price
   end
   
   def add_item(title, price, optional=1)
@@ -22,8 +21,8 @@ class CashRegister
     if @discount > 0
        
        
-       total
-       difference = @price * (@discount/100)
+       
+       difference = @total * (@discount/100)
        total = total - difference
         
        "After the discount, the total comes to $#{total}."
